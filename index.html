@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <title>Gamitars</title>
+
+    <!-- Meta -->
+    <meta name="description" content="Gamitar" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Fonts -->
+    <link
+      href="http://fonts.googleapis.com/css?family=Lobster+Two"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <!-- Main-->
+    <div id="main" class="container">
+      <!-- Header -->
+      <header>
+        <hgroup>
+          <h1>Gamitar</h1>
+        </hgroup>
+      </header>
+      <!-- /Header-->
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <div class="col-12">
+          <div class="operations">
+            <div class="create-new">
+              <img
+                src="https://cdn1.iconfinder.com/data/icons/Mobile-Icons/128/07_note.png"
+                alt="Create new"
+                width="80"
+                title="Create new note"
+                onclick="showModal()"
+              />
+            </div>
+            <div class="filter">
+              <img
+                src="https://cdn1.iconfinder.com/data/icons/science-technology-outline-24-px/24/Cone_filter_filtering_funnel_pipe-512.png"
+                alt="Filter"
+                width="60"
+                title="Filter notes"
+                onclick="showFilterModal()"
+              />
+            </div>
+            <div class="trash">
+              <img
+                src="https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/trash-128.png"
+                alt="Trash"
+                width="50"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <h3>To Do</h3>
+          <div class="box"></div>
+        </div>
+        <div class="col-4">
+          <h3>Doing</h3>
+          <div class="box"></div>
+        </div>
+
+        <div class="col-4">
+          <h3>Done</h3>
+          <div class="box"></div>
+        </div>
+      </div>
+      <!-- /Main Content -->
+    </div>
+    <!-- /Main -->
+
+    <!-- Footer -->
+    <footer></footer>
+    <!-- /Footer-->
+
+    <script src="src/js/main.js"></script>
+  </body>
+</html>
