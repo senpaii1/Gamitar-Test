@@ -153,6 +153,17 @@ document.addEventListener("DOMContentLoaded", function () {
     var noteEndDate = document.getElementById("noteEndDate").value;
     var notePriority = document.getElementById("notePriority").value;
 
+    if (noteTitle.length === 0 || noteDescription.length === 0) {
+      alert("Please fill all the fields");
+      return;
+    } else if (noteEndDate.length === 0) {
+      alert("Please fill all the fields");
+      return;
+    } else if (notePriority.length === 0) {
+      alert("Please fill all the fields");
+      return;
+    }
+
     if (noteTitle && noteDescription && noteEndDate && notePriority) {
       var thisNote;
 
